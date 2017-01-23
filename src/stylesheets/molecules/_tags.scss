@@ -1,0 +1,85 @@
+$color-blue       : #65a8e8;
+$color-green      : #27ae60;
+$color-yellow     : #f7ab17;
+$color-low-yellow : #fef5e3;
+$color-red 	      : #e84a6a;
+$color-gray       : #E0E0E0;
+
+.ng2-tags-wrapper {
+  width: 100%;
+
+  .ng2-tags {
+
+    .ng2-tag {
+      cursor: pointer;
+      display: inline-block;
+      height: 24px;
+      line-height: 24px;
+      position: relative;
+      margin: 0 16px 8px 0;
+      padding: 0 10px 0 12px;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      @include box-shadow(0 1px 2px rgba(0,0,0,0.2));
+      @include font-size(12px);
+
+      &:before {
+        content: "";
+        position: absolute;
+        top:0;
+        left: -12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 12px 12px 0;
+      }
+
+      &:after {
+        content: "";
+        float: left;
+        @include set-position(absolute, 10px, auto, auto, 1px);
+        @include circle(5px);
+        @include box-shadow(-1px -1px 2px rgba(0,0,0,0.4));
+        background: #fff;
+      }
+
+      &.ng2-tag-color-1 {
+        background: $color-blue;
+        &:before {
+          border-color: transparent $color-blue transparent transparent;
+        }
+      }
+      &.ng2-tag-color-2 {
+        background: $color-green;
+         &:before {
+           border-color: transparent $color-green transparent transparent;
+         }
+      }
+      &.ng2-tag-color-3 {
+        background: $color-yellow;
+         &:before {
+           border-color: transparent $color-yellow transparent transparent;
+         }
+      }
+      &.ng2-tag-color-4 {
+        background: $color-low-yellow;
+         &:before {
+           border-color: transparent $color-low-yellow transparent transparent;
+         }
+      }
+      &.ng2-tag-color-5 {
+        background: $color-red;
+         &:before {
+           border-color: transparent $color-red transparent transparent;
+         }
+      }
+      &.ng2-tag-color-6 {
+         &:before {
+           border-color: transparent $color-blue transparent transparent;
+         }
+        background: $color-blue;
+      }
+    }
+
+  }
+}

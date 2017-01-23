@@ -1,0 +1,101 @@
+//== Colors
+
+//= Primary colors
+$color-blue       : #65a8e8;
+$color-green      : #27ae60;
+$color-yellow     : #f7ab17;
+$color-low-yellow : #fef5e3;
+$color-red 	      : #e84a6a;
+
+//= Information colors
+$color-success    : #5cb85c !default;
+$color-info       : #5bc0de !default;
+$color-warning    : $color-yellow  !default;
+$color-danger     : $color-red     !default;
+
+//= Green palette
+$color-red-50  : #FFEBEE !default;
+$color-red-100 : #FFCDD2 !default;
+$color-red-200 : #EF9A9A !default;
+$color-red-300 : #E57373 !default;
+$color-red-400 : #EF5350 !default;
+$color-red-500 : #F44336 !default;
+$color-red-600 : #E53935 !default;
+$color-red-700 : #D32F2F !default;
+$color-red-800 : #C62828 !default;
+$color-red-900 : #B71C1C !default;
+
+//= Green palette
+$color-green-50  : #E8F5E9 !default;
+$color-green-100 : #C8E6C9 !default;
+$color-green-200 : #A5D6A7 !default;
+$color-green-300 : #81C784 !default;
+$color-green-400 : #66BB6A !default;
+$color-green-500 : #4CAF50 !default;
+$color-green-600 : #43A047 !default;
+$color-green-700 : #388E3C !default;
+$color-green-800 : #2E7D32 !default;
+$color-green-900 : #1B5E20 !default;
+
+//= light Green palette
+$color-light-green-50  : #F1F8E9 !default;
+$color-light-green-100 : #DCEDC8 !default;
+$color-light-green-200 : #C5E1A5 !default;
+$color-light-green-300 : #AED581 !default;
+$color-light-green-400 : #9CCC65 !default;
+$color-light-green-500 : #8BC34A !default;
+$color-light-green-600 : #7CB342 !default;
+$color-light-green-700 : #689F38 !default;
+$color-light-green-800 : #558B2F !default;
+$color-light-green-900 : #33691E !default;
+
+//= Light Blue palette
+$color-light-blue-50  : #E1F5FE !default;
+$color-light-blue-100 : #B3E5FC !default;
+$color-light-blue-200 : #81D4FA !default;
+$color-light-blue-300 : #4FC3F7 !default;
+$color-light-blue-400 : #29B6F6 !default;
+$color-light-blue-500 : #03A9F4 !default;
+$color-light-blue-600 : #039BE5 !default;
+$color-light-blue-700 : #0288D1 !default;
+$color-light-blue-800 : #0277BD !default;
+$color-light-blue-900 : #01579B !default;
+
+//= Light Blue gray
+$color-blue-gray-50  : #ECEFF1 !default;
+$color-blue-gray-100 : #CFD8DC !default;
+$color-blue-gray-200 : #B0BEC5 !default;
+$color-blue-gray-300 : #90A4AE !default;
+$color-blue-gray-400 : #78909C !default;
+$color-blue-gray-500 : #607D8B !default;
+$color-blue-gray-600 : #546E7A !default;
+$color-blue-gray-700 : #455A64 !default;
+$color-blue-gray-800 : #37474F !default;
+$color-blue-gray-900 : #263238 !default;
+
+//= Gray colors
+$color-gray-50  : #FAFAFA !default;
+$color-gray-100 : #F5F5F5 !default;
+$color-gray-200 : #EEEEEE !default;
+$color-gray-300 : #E0E0E0 !default;
+$color-gray-400 : #BDBDBD !default;
+$color-gray-500 : #9E9E9E !default;
+$color-gray-600 : #757575 !default;
+$color-gray-700 : #616161 !default;
+$color-gray-800 : #424242 !default;
+$color-gray-900 : #212121 !default;
+$color-black    : #000000 !default;
+//** Theme Colors
+$color-theme-primary   : $color-light-blue-700 !default;
+$color-theme-2   : #FAFAFA !default;
+$color-theme-3   : #F5F5F5 !default;
+$color-theme-4   : #E0E0E0 !default;
+$color-theme-5   : #424242 !default;
+
+//= Dashboard
+$color-dashboard-primary: #85CE36 !default;
+
+  //= Basic colors
+$white-color      : #ffffff !default;
+$body-bg          : #f6f0f0 !default;
+$font-color 	  : #575964 !default;

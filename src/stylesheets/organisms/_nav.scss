@@ -1,0 +1,16 @@
+.yv-nav-c {
+  .yv-title {
+     min-width: 200px;
+     height: 64px;
+     display: block;
+     background:  $color-theme-primary;
+     @include box-shadow(0px 2px 2px 0px rgba(0,81,143,0.8));
+
+    img {
+      @include set-size(50px, 50px, false, false);
+      position: relative;
+      left: 5px;
+      top: 0;
+    }
+  }
+};

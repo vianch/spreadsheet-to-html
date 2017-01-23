@@ -1,0 +1,26 @@
+footer {
+  position: relative;
+  z-index: 10;
+  background: $color-theme-5;
+  margin-top: 30px;
+  min-height: 130px;
+
+  .row {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+
+  .bottom-footer {
+    padding: 15px 0 0px;
+    height: 32px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+
+    span {
+      @include font-size(11px);
+      color: lighten($color-theme-5, 15%);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.youtube-container {
+
+  @include set-size(100%, auto, true, true);
+  max-width: 600px;
+  border:3px solid $color-theme-primary;
+  margin: 25px 0;
+  @include opacity(0.92);
+
+  .youtube-player {
+    @include set-size(100%, 100%, true, false);
+    background-color: $color-theme-2;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    .youtube-thumb {
+      @include set-size(100%, auto, true, false);
+      @include set-position(absolute, 0 ,0 ,0, 0);
+      margin: -9.25% auto;
+      max-width: 100%;
+    }
+
+    .youtube-iframe {
+      @include set-size(100%, 100%, true, false);
+      @include set-position(absolute, 0 , auto , auto, 0);
+    }
+
+  }
+}
+
+.youtube-description {
+  margin-bottom: 25px;
+  h1 {
+    margin: 20px 0;
+    color: $color-theme-primary;
+  }
+  p {
+    color: $color-theme-5;
+    overflow: hidden;
+  }
+}
