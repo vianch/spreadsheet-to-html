@@ -4,7 +4,9 @@
   "description": "copy from spreadsheet to html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack && concurrently  \"smooth-server -c config/smooth-server.config.json\" ",
+    "server": "smooth-server -c config/smooth-server.config.json",
+    "build-dev": "webpack --config config/webpack.config -w"
   },
   "repository": {
     "type": "git",

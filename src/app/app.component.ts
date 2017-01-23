@@ -1,9 +1,17 @@
-import { Component, } from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 
 @Component({
     selector: "app-root",
-    template: `Hello from angular 2222`,
+    templateUrl: "app.component.html",
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+    public pastedData: string;
 
+    public ngOnInit(): void {
+        this.pastedData = "Nothing";
+    }
+
+    public pasteData(event: {pasteData: string} ): void {
+        this.pastedData = event.pasteData;
+    }
 }
