@@ -1,25 +1,90 @@
-<div style="padding: 50px" th-clipboard (onPasteData)="pasteData($event)">
-    <h3>Table</h3>
+<div class="table-container">
 
-<div  style="width: 1000px; height: 1000%; background: darkred">
-    <table border="1">
-        <thead>
-        <tr>
-            <th>ROW INFO</th>
-            <th>PASTED DATA</th>
-        </tr>
-        </thead>
-        <tbody>
+    <section class="table-section vl-cards card-1">
+        <h3>Months table</h3>
 
-        <tr *ngFor="let data of pastedData">
-            <td style="padding: 5px">Pasted data  </td>
-            <td style="padding: 5px">{{data}}</td>
-        </tr>
-        </tbody>
-    </table>
-    <textarea></textarea>
-</div>
+        <table class="table  table-striped table-bordered table-hover" th-clipboard (onPasteData)="pasteMonthData($event)">
+            <thead>
+            <tr>
+                <th>MONTH</th>
+                <th style="padding: 5px 25px 5px 5px; text-align: right" align="right">ENERGY OUTPUT [kWh]</th>
+            </tr>
+            </thead>
+            <tbody>
 
-<div id="log"></div>
+            <tr>
+                <td style="padding: 5px">January</td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[0]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">February </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[1]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">March </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[2]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">April </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[3]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">May </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[4]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">June</td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[5]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">July</td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[6]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">August </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[7]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">September  </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[8]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">October  </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[9]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">November  </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[10]}}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px">December  </td>
+                <td style="padding: 5px 25px 5px 5px" align="right">{{pastedDataMonths[11]}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="table-total"><strong>Total: </strong>{{totalSum}}</div>
+    </section>
+
+    <section class="table-section vl-cards card-1">
+        <h3>Energy degradation</h3>
+        <table class="table table-striped table-bordered table-hover" th-clipboard (onPasteData)="pasteData($event)">
+            <thead>
+            <tr>
+                <th>YEAR</th>
+                <th>P50</th>
+                <th>DERATE</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr *ngFor="let data of pastedData;  let i = index;">
+                <td style="padding: 5px">{{i + 1}}</td>
+                <td style="padding: 5px">20.201.123</td>
+                <td style="padding: 5px">{{data}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
 
 </div>

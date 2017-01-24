@@ -1,1 +1,1 @@
-export * from "clipboad.directive";
+export {ClipboardDirective} from "./clipboad.directive";

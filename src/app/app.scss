@@ -1,0 +1,33 @@
+@import "../stylesheets/utilities/variables";
+@import "../stylesheets/utilities/mixins";
+
+.table-container {
+  background: get-color($md-grey, 50);
+  padding: 25px;
+  width: 100vw;
+  height: 100vh;
+
+  .table {
+    @include font-size(12px);
+  }
+}
+
+.table-section {
+  margin: 15px;
+  padding: 25px;
+
+  h3 {
+    @include font-size(24px);
+    font-weight: 600;
+    color: get-contrast($md-blue-grey, 300);
+    margin-bottom: 20px;
+  }
+  .table-total {
+    @include font-size(12px);
+    @include set-size(100%,15px, true, true);
+    margin-bottom: 0px;
+    text-align: right;
+    line-height: 17px;
+    padding-right: 25px;
+  }
+}

@@ -5,8 +5,8 @@ import {Directive, ElementRef, Output, EventEmitter, Renderer, HostListener} fro
 })
 export class ClipboardDirective {
     @Output() public onPasteData: EventEmitter<{pasteData: Array<string>}>;
-    @HostListener("paste") paste() {
 
+    @HostListener("click") paste() {
     }
 
     constructor(private elementRef: ElementRef, renderer: Renderer) {
