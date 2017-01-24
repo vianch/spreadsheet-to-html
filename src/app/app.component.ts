@@ -5,13 +5,13 @@ import {Component, OnInit} from "@angular/core";
     templateUrl: "app.component.html",
 })
 export class AppComponent implements OnInit {
-    public pastedData: string;
+    public pastedData: Array<string>;
 
     public ngOnInit(): void {
-        this.pastedData = "Nothing";
+        this.pastedData = ["NOTHING PASTED"];
     }
 
-    public pasteData(event: {pasteData: string} ): void {
+    public pasteData(event: {pasteData: Array<string>} ): void {
         this.pastedData = event.pasteData;
     }
 }

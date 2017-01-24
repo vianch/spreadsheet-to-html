@@ -1,7 +1,25 @@
-<h3>Table</h3>
-<div th-clipboard (onPasteData)="pasteData($event)"  style="display: block; width: 300px; height: 400px; background: rosybrown;">
+<div style="padding: 50px" th-clipboard (onPasteData)="pasteData($event)">
+    <h3>Table</h3>
+
+<div  style="width: 1000px; height: 1000%; background: darkred">
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ROW INFO</th>
+            <th>PASTED DATA</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr *ngFor="let data of pastedData">
+            <td style="padding: 5px">Pasted data  </td>
+            <td style="padding: 5px">{{data}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <textarea></textarea>
 </div>
 
-<p>{{pastedData}}</p>
+<div id="log"></div>
 
-
+</div>
